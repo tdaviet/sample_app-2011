@@ -106,6 +106,7 @@ describe User do
     
     it "should set the encrypted password" do
       @user.encrypted_password.should_not be_blank
+    end
       
       describe "authenticate method" do
         
@@ -124,7 +125,7 @@ describe User do
           matching_user.should == @user
         end
       end
-    end
+    
     
     describe "has_password? method" do
     
